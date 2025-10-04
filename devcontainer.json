@@ -1,0 +1,11 @@
+{
+  "name": "Python Dev Container with JupyterLab",
+  "image": "mcr.microsoft.com/devcontainers/python:3.11",
+  "features": {
+    "ghcr.io/devcontainers/features/python:1": {
+      "installJupyterlab": true
+    }
+  },
+  "forwardPorts": [8888],
+  "postCreateCommand": "jupyter lab --ip=0.0.0.0 --no-browser --allow-root"
+}
